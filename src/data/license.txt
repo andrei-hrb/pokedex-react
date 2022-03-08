@@ -1,0 +1,1 @@
+pokedex.json thanks to https://project-awesome.org/jdorfman/awesome-json-datasets
