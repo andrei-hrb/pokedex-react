@@ -1,7 +1,5 @@
 import DarkMode from './DarkMode'
 
-import pika from '../../assets/pika.gif'
-
 const Header = () => (
     <header className='flex justify-center relative'>
         <h2 className='inline text-3xl md:text-5xl font-black'>ポケモン図鑑</h2>
