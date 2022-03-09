@@ -5,23 +5,19 @@ const Search = ({ data, setData, initial }) => {
 
     const handleOnChangeSearch = (e) => {
         setSearch(e.target.value.toLowerCase())
-        if (e.target.value !== '') {
-            setData(
-                data.filter(
-                    (pokemon) =>
-                        pokemon.name
-                            .toLowerCase()
-                            .includes(e.target.value.toLowerCase()) ||
-                        pokemon.num.includes(e.target.value) ||
-                        pokemon.type
-                            .toString()
-                            .toLowerCase()
-                            .includes(e.target.value.toLowerCase()),
-                ),
-            )
-        } else {
-            setData(initial)
-        }
+        setData(
+            initial.filter(
+                (pokemon) =>
+                    pokemon.name
+                        .toLowerCase()
+                        .includes(e.target.value.toLowerCase()) ||
+                    pokemon.num.includes(e.target.value) ||
+                    pokemon.type
+                        .toString()
+                        .toLowerCase()
+                        .includes(e.target.value.toLowerCase()),
+            ),
+        )
     }
 
     return (
