@@ -4,6 +4,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 pika: "url('assets/pika.gif')",
+                ash: "url('assets/ash.gif')",
             },
         },
     },
