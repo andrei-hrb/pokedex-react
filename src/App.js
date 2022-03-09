@@ -1,13 +1,15 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 
-function App() {
-    return (
-        <div className='container mx-auto p-4'>
-            <Header />
-            <Footer />
-        </div>
-    )
-}
+const initialPokemon = require('./data/pokedex.json')['pokemon']
+
+const App = () => (
+    <div className='p-4 text-l font-mono dark:bg-slate-800 dark:text-white min-h-screen'>
+        <Header />
+        <Main initial={initialPokemon} />
+        <Footer />
+    </div>
+)
 
 export default App
