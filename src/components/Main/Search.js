@@ -30,7 +30,7 @@ const Search = ({ data, setData, initial }) => {
             type='text'
             value={search}
             onChange={handleOnChangeSearch}
-            className='block w-full bg-gray-100 dark:bg-slate-700 p-3 border rounded text-xl'
+            className='block w-full bg-gray-100 dark:bg-slate-700 p-3 border rounded text-xl sm:text-lg'
             placeholder='Search 🔍'
         />
     )
