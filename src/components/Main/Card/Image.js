@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react'
 
 const importAll = (r) => {
     let images = {}
-    r.keys().map((item) => {
-        images[item.replace('./', '')] = r(item)
-    })
+    r.keys().map((item) => (images[item.replace('./', '')] = r(item)))
     return images
 }
 
@@ -44,6 +42,7 @@ const Image = ({ type, id }) => {
         <img
             className={backgroundColors[type.toLowerCase(0)] + ' border-r'}
             src={images[id + '.png']}
+            alt={id + ' image'}
             loading='lazy'
         />
     )
