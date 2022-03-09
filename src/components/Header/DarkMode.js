@@ -7,7 +7,6 @@ const DarkMode = () => {
         if (localStorage.getItem('dark') === null) {
             localStorage.setItem('dark', 'false')
         } else {
-            console.log(localStorage.getItem('dark'))
             if (localStorage.getItem('dark') === 'true') {
                 setDark(true)
                 document.querySelector('html').classList.add('dark')
